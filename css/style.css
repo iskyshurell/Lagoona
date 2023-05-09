@@ -123,6 +123,10 @@ input[type=number]::-webkit-outer-spin-button {
   padding-top: 30px;
 }
 
+.container-main {
+  padding-bottom: 40px
+}
+
 .container-padding-bot {
   padding-bottom: 30px;
 }
@@ -703,6 +707,63 @@ input[type=number]::-webkit-outer-spin-button {
 /* footer */
 
 .footer {
+  min-height: 341px;
   background: #333;
+  background-image: url('../img/lagoona-logo.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 739px;
+  background-position-y: bottom;
   border-radius: 15px;
+}
+
+.footer-info {
+  width: 100%;
+  padding: 45px;
+  overflow: hidden;
+}
+
+.footer-flex {
+  gap: 125px;
+}
+
+.footer-link {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.footer-font {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  /* or 30px */
+}
+
+.footer-font-white {
+  color: #fff;
+}
+
+.footer-rights {
+  flex-direction: column;
+  max-width: 305px;
+  gap: 40px;
+}
+
+.footer-contacts {
+  flex-direction: column;
+  max-width: 360px;
+  margin-right: auto;
+  gap: 15px;
+}
+
+.footer-links {
+  flex-direction: column;
+  gap: 20px
+}
+
+.footer-contacts-other {
+  flex-direction: column;
 }
