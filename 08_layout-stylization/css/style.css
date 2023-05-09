@@ -53,6 +53,22 @@ body {
 	font-family: 'Muller', sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+   opacity: 1;
+
+}
+
+*:focus {
+  outline: none;
+}
+
+
 /* reset */
 
 .reset-margin {
@@ -105,6 +121,10 @@ body {
 
 .container-padding-top {
   padding-top: 30px;
+}
+
+.container-main {
+  padding-bottom: 40px
 }
 
 .container-padding-bot {
@@ -167,10 +187,6 @@ body {
 
 }
 
-.no-repeat {
-  background-repeat: no-repeat;
-}
-
 .main-header {
   margin: 0;
   margin-bottom: 20px;
@@ -181,10 +197,13 @@ body {
   line-height: 40px;
 
   color: #333333;
-
 }
 
 /* header */
+
+.header {
+  margin-bottom: 70px;
+}
 
 .header-container {
   align-items: center;
@@ -238,7 +257,6 @@ body {
 
 .header-nav {
   height: 70px;
-  margin-bottom: 70px;
   gap: 115px;
   line-height: 16px;
   color: #666666;
@@ -272,13 +290,16 @@ body {
   align-items: end;
   width: 573px;
   padding: 40px 108px 40px 45px;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   flex-grow: 1;
 }
 
 .main-offers-list-item-header {
   display: inline-block;
   width: fit-content;
+  max-width: 400px;
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 40px;
@@ -354,6 +375,16 @@ body {
 
 .main-services-list-item-content {
   padding: 191px 126px 35px 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.main-services-list-item-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }
 
 .service-photo-1 {
@@ -375,6 +406,7 @@ body {
 .main-services-list-item-header {
   display: inline-block;
   width: fit-content;
+  max-width: 100%;
   padding-right: 22px;
   background-image: url('../img/yellow-arrow.svg');
   background-position: right center;
@@ -408,6 +440,8 @@ body {
 
 .advantages-position {
   background-position: 45px 40px;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .advantages-image-1 {
@@ -458,12 +492,18 @@ body {
 
 .main-placement-list-item-image {
   display: block;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-placement-list-item-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 16px;
+}
+
+.main-placement-list-item-price {
+  max-width: 180px;
 }
 
 .main-placement-list-item-name {
@@ -475,6 +515,7 @@ body {
 
 .main-placement-list-item-btn {
   display: block;
+  max-width: 80%;
 }
 
 .main-placement-list-item-content {
@@ -485,6 +526,7 @@ body {
 
 .main-placement-list-item-address {
   display: inline-block;
+  max-width: 80%;
   margin-bottom: 20px;
 }
 
@@ -500,12 +542,16 @@ body {
   padding: 373px 54px 27px 54px;
   background-image: url('../img/show-more-image.jpg');
   background-repeat: no-repeat;
-  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-placement-list-item-link {
-  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding-right: 16px;
+  white-space: nowrap;
   background-image: url('../img/arrow.svg');
   background-position: right center;
   background-repeat: no-repeat;
@@ -513,4 +559,211 @@ body {
   font-size: 20px;
   line-height: 200%;
   color: #fff;
+}
+
+/* offer */
+
+.input-reset {
+  border: 0;
+}
+
+.main-offer {
+  padding-left: 40px;
+  padding-top: 45px;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  min-height: 256px;
+  background-color: #e9e9e9;
+  border-radius: 15px;
+}
+
+.main-offer-header {
+  margin-bottom: 20px;
+  padding-left: 0px;
+  font-family: 'Muller';
+  color: #000;
+
+}
+
+.main-offer-form {
+  padding-left: 5px;
+  width: 100%;
+}
+
+.main-offer-form-item {
+  max-height: 45px;
+}
+
+.main-offer-form-btn {
+  padding: 13px 30px;
+  height: 45px;
+  width: 108px;
+
+}
+
+.main-offer-form-descr {
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000;
+}
+
+.main-offer-form-input {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.main-offer-fields {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  padding-left: 28px;
+  padding-right: 28px;
+  height: 106px;
+  border: 0;
+}
+
+/* contacts */
+
+.contacts-block {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 53px;
+  width: 100%;
+  min-height: 618px;
+  padding: 45px;
+}
+
+.contacts-block-image {
+  min-width: 653px;
+  min-height: 528px;
+  border-radius: 10px;
+  background-image: url("../img/contacts.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contacts-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+}
+
+.contacts-link {
+  text-decoration: none;
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  white-space: nowrap;
+  color: #cc9933;
+}
+
+.contacts-paragraph {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.contacts-comment {
+  font-family: inherit;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #999;
+}
+
+.contacts-block-item {
+  display: block;
+  position: relative;
+  padding-left: 145px;
+  padding-bottom: 23px;
+  border-bottom: 1px #e9e9e9 groove;
+}
+
+.contacts-block-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.contacts-hours:not(:last-child) {
+  margin-bottom: 45px;
+}
+
+.contacts-button {
+  width: 213px;
+  height: 70px;
+}
+
+/* footer */
+
+.footer {
+  min-height: 341px;
+  background: #333;
+  background-image: url('../img/lagoona-logo.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 739px;
+  background-position-y: bottom;
+  border-radius: 15px;
+}
+
+.footer-info {
+  width: 100%;
+  padding: 45px;
+  overflow: hidden;
+}
+
+.footer-flex {
+  gap: 125px;
+}
+
+.footer-link {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+}
+
+.footer-font {
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  /* or 30px */
+}
+
+.footer-font-white {
+  color: #fff;
+}
+
+.footer-rights {
+  flex-direction: column;
+  max-width: 305px;
+  gap: 40px;
+}
+
+.footer-contacts {
+  flex-direction: column;
+  max-width: 360px;
+  margin-right: auto;
+  gap: 15px;
+}
+
+.footer-links {
+  flex-direction: column;
+  gap: 20px
+}
+
+.footer-contacts-other {
+  flex-direction: column;
 }
